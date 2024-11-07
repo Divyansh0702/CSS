@@ -1,0 +1,64 @@
+div a{
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div a[target = "_top"]{
+    background-color: bisque;
+    font-size: 20px;
+}
+
+.class1 .class2{
+    background-color: palegreen;
+}
+
+.class1.class2{
+    font-size: 25px;
+}
+
+.class2 > p{
+    background-color: bisque;
+}
+
+/* attribute selectors */
+.content div[data-color]{
+    color: brown;
+}
+
+[class*="foo"]{
+    color: blue;    
+}
+
+[class~="color-red"]{
+    color: red;
+}
+
+[class^="foo-"]{
+    color: yellow;
+}
+
+[class$="file"]{
+    background-color: burlywood;
+}
+
+[lang="EN"]{
+    color: red;
+}
+
+div > span{
+    color: blue;
+}
+
+p + p{
+    background-color: blanchedalmond;
+}
+
+p ~ p{
+    color: blue;
+}
+
+input:in-range{
+    border: 2px solid blue;
+    width: 20%;
+}
